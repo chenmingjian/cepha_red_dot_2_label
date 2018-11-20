@@ -20,8 +20,9 @@ for word in count:
         frequency[word] += 1
 
 print(set(count))
-print(sorted(frequency.keys()))
-print(sorted(frequency.values()))
+tmp_sorted_key = sorted(frequency.keys())
+check = 68
+print(frequency)
 
-a = count.index(7)
-print(a, path_list[a])
+a = count.index(check)
+print(path_list[a])
