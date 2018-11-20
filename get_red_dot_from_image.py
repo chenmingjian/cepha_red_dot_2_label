@@ -7,11 +7,11 @@ begin = time.time()
 
 ROOT_DIR = 'C:/Users/chen/Desktop/red_dot/'
 OUT_DIR = 'label/'
-IMAGE_DIRS = ['1_350/','2_350/','3_348/']
-
+# IMAGE_DIRS = ['1_350/','2_350/','3_348/']
+IMAGE_DIRS = ['1_350/']
 scale_clear_size = {
-    4:6,
-    1:4
+    4:8,
+    1:3
 }
 
 def get_red_dot_img_path(dirs):
@@ -52,7 +52,7 @@ paths = get_all_img_file_path()
 for path in paths:
 
     img = cv2.imread(path,1)
- 
+
     Lower = np.array([0, 0, 100])
     Upper = np.array([40, 40, 255])
     Binary = cv2.inRange(img, Lower, Upper)
@@ -84,4 +84,4 @@ for path in paths:
 
          
 end = time.time()
-print("total time is ", end - begin)    
+print("total time is " + str((end - begin)/60) + "mins.")    
