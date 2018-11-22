@@ -1,6 +1,6 @@
 
 import os 
-g = os.walk(R'C:\Users\chen\Desktop\red_dot\label')  
+g = os.walk(R'C:\Users\chen\Desktop\red_dot\label_norm')  
 
 frequency = {}
 count = []
