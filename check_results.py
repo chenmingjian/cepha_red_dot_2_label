@@ -19,10 +19,15 @@ for word in count:
     else:
         frequency[word] += 1
 
+model = {}
 print(set(count))
 tmp_sorted_key = sorted(frequency.keys())
-check = 68
-print(frequency)
+for i in tmp_sorted_key:
+    check = i
+    #print(frequency)
+    a = count.index(check)
+    #print(path_list[a])
+    if check not in model:
+        model[check] = path_list[a]
 
-a = count.index(check)
-print(path_list[a])
+print(model)
