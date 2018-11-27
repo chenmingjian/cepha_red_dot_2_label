@@ -12,6 +12,7 @@ txt_2 = np.loadtxt(ROOT + '3.txt')
 
 print(txt_1.shape, txt_2.shape)
 
+
 def get_some_point(txt_1, point_range):
     distance_list = []
     coordinate_list = []
