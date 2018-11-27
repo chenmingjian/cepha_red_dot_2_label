@@ -1,5 +1,4 @@
 import os
-from itertools import combinations, permutations
 
 OUT_DIR = R'C:\Users\chen\Desktop\red_dot\label_may_be_fanal/'
 RESULTS = "transformed_model.txt"
@@ -29,6 +28,4 @@ def change_src_and_dst_in_cfg(src, dst):
     with open(CFG,'w') as f: 
         f.writelines(tmp)
 
-from scipy.special import comb, perm
-print (perm(28,28))
 #tmp = list(permutations(KEYS, 28)

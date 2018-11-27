@@ -3,10 +3,6 @@ import os
 import numpy as np
 
 
-txt_path_list = []
-for root, dirs, files in os.walk(R"C:\Users\chen\Desktop\red_dot\label"):
-    for i, f in enumerate(files) : 
-        txt_path_list.append(os.path.join(root, f))
 
 img_path_list = []
 for txt_path in txt_path_list:
